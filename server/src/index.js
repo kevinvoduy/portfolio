@@ -1,7 +1,5 @@
-import http from 'http';
-import App from './config/express';
-
-require('./config/database');
+const http = require('http');
+const App = require('./config/express');
 
 const app = App.express;
 
@@ -13,4 +11,4 @@ server.listen(PORT, (err) => {
   console.log('Successfully connected to port', PORT);
 });
 
-export default app;
+module.exports = app;
