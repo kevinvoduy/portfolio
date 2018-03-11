@@ -20,6 +20,9 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   watch: true,
   plugins: [
     new webpack.DefinePlugin({
