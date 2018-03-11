@@ -5,6 +5,7 @@ import router from '../../routes';
 const middleWare = [
   parser.json(),
   parser.urlencoded({ extended: true }),
+  express.static(path.resolve(__dirname, '../../../../client/public'))
 ];
 
 class App {
