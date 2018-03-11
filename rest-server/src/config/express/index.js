@@ -1,6 +1,7 @@
 import express from 'express';
 import parser from 'body-parser';
 import router from '../../routes';
+import path from 'path';
 
 const middleWare = [
   parser.json(),
