@@ -11,16 +11,16 @@ class App {
   constructor() {
     this.express = express();
     this.mountMiddleWare();
-    this.mountRoutes();
+    // this.mountRoutes();
   }
 
   mountMiddleWare() {
     this.express.use(...middleWare);
   }
 
-  mountRoutes() {
-    this.express.use('/api', router);
-  }
+  // mountRoutes() {
+  //   this.express.use('/api', router);
+  // }
 }
 
 module.exports = new App();
