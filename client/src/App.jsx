@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
+import NavBar from './components/NavBar'
 
-class App extends Component {
-  constructor() {
-    super();
-  }
-
+export default class App extends Component {
   render() {
     return (
       <div>
-        Hello from react
+        <NavBar/>
       </div>
     )
   }
 }
-
-export default App;
