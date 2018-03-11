@@ -1,6 +1,6 @@
-const express = require('express');
-const parser = require('body-parser');
-const router = require('../../routes');
+import express from 'express';
+import parser from 'body-parser';
+import router from '../../routes';
 
 const middleWare = [
   parser.json(),
@@ -23,4 +23,4 @@ class App {
   // }
 }
 
-module.exports = new App();
+export default new App();
