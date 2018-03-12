@@ -1,0 +1,45 @@
+li {
+  text-decoration: none;
+  display: inline;
+  margin-left: 1em;
+}
+
+.nav {
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+  background: rgb(45, 56, 116);
+  margin: 0;
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav ul {
+  padding: 1em 0;
+  margin: 0;
+  background: rgb(45, 56, 116);
+}
+
+.fixed-nav .nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: palevioletred;
+  transition: all .5s;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+li.logo a {
+  color: black;
+}
