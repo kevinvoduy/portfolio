@@ -1,0 +1,16 @@
+.heading {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 2.25em;
+}
+
+.form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
