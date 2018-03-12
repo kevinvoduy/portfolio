@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Project from './Project'
 import './projects.css'
 
 export default class Projects extends Component {
@@ -8,35 +9,63 @@ export default class Projects extends Component {
     let startX;
     let scrollLeft;
 
-    slider.addEventListener('mousedown', () => {
+    slider.addEventListener('mousedown', (e) => {
       isDown = true;
       slider.classList.add('active');
-    })
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
 
     slider.addEventListener('mouseleave', () => {
       isDown = false;
       slider.classList.add('active');
-    })
+    });
 
     slider.addEventListener('mouseup', () => {
       isDown = false;
       slider.classList.add('active');
-    })
+    });
 
-    slider.addEventListener('mousemove', () => {
+    slider.addEventListener('mousemove', (e) => {
       if(!isDown) return;
-      console.count(isDown);
-    })
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = x - startX;
+      slider.scrollLeft = scrollLeft - walk;
+    });
   }
 
   render () {
     return (
-      <div className='projects'>
+      <div>
         <h2>Recent Projects</h2>
-        <div className='project GoWithMe'>GoWithMe</div>
-        <div className='project CodeSling'>codeSling</div>
-        <div className='project CoffeeMeetsFido'>CoffeeMeetsFido</div>
-        <div className='project TrippyTrip'>TrippyTrip</div>
+        <div className='projects' id='scroll'>
+          <Project
+            title='Levy Tran'
+            meta='Ex Girlfriend'
+            description='Jaes new girlfriend'
+          />
+          <Project
+            title='Levy Tran'
+            meta='Ex Girlfriend'
+            description='Jaes new girlfriend'
+          />
+          <Project
+            title='Levy Tran'
+            meta='Ex Girlfriend'
+            description='Jaes new girlfriend'
+          />
+          <Project
+            title='Levy Tran'
+            meta='Ex Girlfriend'
+            description='Jaes new girlfriend'
+          />
+          <Project
+            title='Levy Tran'
+            meta='Ex Girlfriend'
+            description='Jaes new girlfriend'
+          />
+        </div>
       </div>
     )
   }
