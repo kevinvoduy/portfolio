@@ -10,7 +10,7 @@ export default class Jumobtron extends Component {
         <div className='centered'>
           <p className='jumbo-text'>Hello, I'm <span className='myName'>Kevin Vo</span>.</p>
           <p className='jumbo-text'>I'm a full-stack web developer.</p>
-          <button className='button'>View my work -></button>
+          <button className='button'>View my work <i className="chevron right icon"></i></button>
         </div>
       </div>
     )
