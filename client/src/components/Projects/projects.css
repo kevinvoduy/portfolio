@@ -12,3 +12,7 @@
 .projects.active {
   cursor: -webkit-grabbing;
 }
+
+.project {
+  padding: 2.5em;
+}

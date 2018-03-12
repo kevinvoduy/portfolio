@@ -16,12 +16,12 @@ export default class Project extends Component {
             </div>
 
             <div className="content">
-              <div className="header">this.props.title</div>
+              <div className="header">{this.props.title}</div>
               <div className="meta">
-                <a>this.props.meta</a>
+                <a>{this.props.meta}</a>
               </div>
               <div className="description">
-                this.props.description
+                {this.props.description}
               </div>
             </div>
 
