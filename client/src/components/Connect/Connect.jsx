@@ -16,7 +16,7 @@ export default class Connect extends Component {
     return (
       <div className='card'>
         <div className='heading'>
-          <h1>Connect</h1>
+          <h1>Let's get connected.</h1>
           <h3>Have a question or want to work together?</h3>
         </div>
 

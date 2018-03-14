@@ -2,23 +2,25 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 80px;
+  height: 30em;
 }
 
 .heading {
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 .heading h1 {
-  font-size: 2.25em;
+  font-size: 2em;
   margin-bottom: 0;
 }
 
 .heading h3 {
   margin-top: 0;
+  margin-bottom: 2em;
 }
 
 form {
@@ -26,15 +28,19 @@ form {
 }
 
 input {
-  width: 80%;
+  width: 85%;
   display: inline-block;
   border-style: solid;
   border: none;
   color: white;
-  background-color: palevioletred;
+  background-color: burlywood;
   padding: 10px 6px;
   font-size: 1em;
-  margin-bottom: 8px;
+  margin-bottom: .5em;
+}
+
+::-webkit-input-placeholder {
+  color: white;
 }
 
 input[type=textarea] {
@@ -43,7 +49,6 @@ input[type=textarea] {
 
 input#submit {
   width: 25%;
-  max-width: 25%;
 }
 
 label {
