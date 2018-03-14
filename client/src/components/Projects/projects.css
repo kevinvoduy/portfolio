@@ -5,6 +5,13 @@
   overflow-y: hidden;
 }
 
+h2#projects {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 3em;
+}
+
 #scroll.project {
   flex: 0 0 auto;
 }

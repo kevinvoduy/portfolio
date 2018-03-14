@@ -14,7 +14,7 @@ export default class Connect extends Component {
   }
   render() {
     return (
-      <div className='card'>
+      <div className='connect'>
         <div className='heading'>
           <h1>Let's get connected.</h1>
           <h3>Have a question or want to work together?</h3>
@@ -33,7 +33,7 @@ export default class Connect extends Component {
               <br/>
 
             <label id='message'>
-              <input type='textarea' name='message' placeholder='Message' onChange={this.onChangeHandler} />
+              <textarea type='textarea' name='message' placeholder='Message' onChange={this.onChangeHandler} />
             </label>
               <br/>
 

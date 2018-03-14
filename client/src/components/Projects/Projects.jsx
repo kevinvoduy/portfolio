@@ -38,7 +38,7 @@ export default class Projects extends Component {
   render () {
     return (
       <div>
-        <h2>Recent Projects</h2>
+        <h2 id='projects'>Recent Projects.</h2>
         <div className='projects' id='scroll'>
           <Project
             title='Levy Tran'

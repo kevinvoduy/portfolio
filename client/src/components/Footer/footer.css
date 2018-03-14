@@ -1,6 +1,6 @@
 .footer {
-  height: 10em;
-  background: rgb(45, 56, 116);
+  height: 14em;
+  background: rgb(35, 38, 54);
 }
 
 .center {
@@ -17,9 +17,24 @@
 
 .social h3 {
   display: inline-block;
-  margin: .5em .5em;
-  background: rgb(250, 115, 205);
+  margin: 3em .6em 1em .6em;
+  background: palevioletred;
   line-height: 3em;
   width: 3em;
   height: 3em;
+  transition: all .2s ease-in-out;
+}
+
+.social h3:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+h3 img {
+  display: block;
+  margin: .8em auto;
+}
+
+#cc {
+  color: palevioletred;
 }

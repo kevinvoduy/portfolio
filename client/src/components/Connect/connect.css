@@ -1,26 +1,24 @@
-.card {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
-  height: 30em;
+.connect {
+  margin: 0 auto;
+  padding: 4em 25em 8em 25em;
+  background: rgb(51, 53, 71);
 }
 
 .heading {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
 }
 
 .heading h1 {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 0;
+  color: palevioletred;
 }
 
 .heading h3 {
-  margin-top: 0;
-  margin-bottom: 2em;
+  margin-top: .5em;
+  margin-bottom: 3em;
+  color: whitesmoke;
 }
 
 form {
@@ -28,27 +26,51 @@ form {
 }
 
 input {
-  width: 85%;
+  width: 100%;
   display: inline-block;
-  border-style: solid;
   border: none;
   color: white;
-  background-color: burlywood;
-  padding: 10px 6px;
-  font-size: 1em;
-  margin-bottom: .5em;
+  background-color: rgb(35, 38, 54);
+  padding: 10px 16px;
+  font-size: 1.1em;
+  margin-bottom: .2em;
 }
 
 ::-webkit-input-placeholder {
   color: white;
 }
 
-input[type=textarea] {
-  height: 4em;
+textarea:focus, input:focus{
+  outline: none;
+}
+
+textarea {
+  height: 10em;
+  width: 100%;
+  resize: none;
+  border: none;
+  color: white;
+  background-color: rgb(35, 38, 54);
+  padding: 10px 16px;
+  font-size: 1.1em;
+  margin-bottom: .5em;
 }
 
 input#submit {
-  width: 25%;
+  width: 20%;
+  float: right;
+  color: white;
+  background: rgb(51, 53, 71);
+  border: 2px solid white;
+  font-size: 1.1em;
+  transition: .5s;
+}
+
+#submit:hover {
+  color: rgb(51, 53, 71);
+  background: white;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
 
 label {
