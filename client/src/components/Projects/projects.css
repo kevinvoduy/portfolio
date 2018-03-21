@@ -4,12 +4,16 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
+.projects {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  padding-bottom: 3em;
+}
 h2#projects {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #scroll.project {
@@ -22,4 +26,8 @@ h2#projects {
 
 .project {
   padding: 2.5em;
+}
+
+.slope img {
+  width: 100%;
 }

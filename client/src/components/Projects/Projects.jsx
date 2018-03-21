@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Project from './Project';
+import slope from './slope.svg';
 import './projects.css';
 
 export default class Projects extends Component {
@@ -67,6 +68,7 @@ export default class Projects extends Component {
             description="Jaes new girlfriend"
           />
         </div>
+        <div className="slope"><img alt="" src={slope} /></div>
       </div>
     );
   }

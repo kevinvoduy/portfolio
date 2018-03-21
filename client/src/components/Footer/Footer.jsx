@@ -10,7 +10,7 @@ const Footer = () => (
         <a href="http://linkedin.com/in/kevinvoduy" ><img src={linkedin} alt="" /></a>
         <a href="http://github.com/kevinvoduy" ><img src={git} alt="" /></a>
       </div>
-      <h5>KEVIN DUY VO<span id="cc"> ©2018</span></h5>
+      <h5>KEVIN DUY VO<span id="cc"> 2018</span></h5>
     </div>
   </div>
 );

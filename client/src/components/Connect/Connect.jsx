@@ -21,7 +21,7 @@ export default class Connect extends Component {
       <div className="connect">
         <div className="heading">
           <h1>{'Let\'s get connected.'}</h1>
-          <h3>Have a question or want to work together?</h3>
+          <h2>Have a question or want to work together?</h2>
         </div>
 
         <div className="form">

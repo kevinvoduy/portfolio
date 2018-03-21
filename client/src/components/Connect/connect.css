@@ -1,6 +1,7 @@
 .connect {
-  padding: 4em 25em 12em 25em;
+  padding: 10% 25em 12em 25em;
   background: rgb(51, 53, 71);
+  height: calc(100vh - 8em - 60.89px);
 }
 
 .heading {
@@ -9,12 +10,13 @@
 }
 
 .heading h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 0;
   color: palevioletred;
+  text-shadow: 1px 1px 1px rgb(36, 36, 36);
 }
 
-.heading h3 {
+.heading h2 {
   margin-top: .5em;
   margin-bottom: 3em;
   color: whitesmoke;
@@ -32,7 +34,8 @@ input {
   color: white;
   background-color: rgb(35, 38, 54);
   padding: 10px 16px;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  line-height: 2em;
   margin-bottom: .2em;
 }
 
@@ -52,24 +55,23 @@ textarea {
   color: white;
   background-color: rgb(35, 38, 54);
   padding: 10px 16px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: .5em;
 }
 
 input#submit {
-  width: 6em;
+  width: 8em;
   float: right;
   color: white;
   background: rgb(51, 53, 71);
   border: 2px solid white;
-  font-size: 1.1em;
+  font-size: 1.2em;
   transition: .5s;
 }
 
 #submit:hover {
   color: rgb(51, 53, 71);
   background: white;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
   cursor: pointer;
 }
 
