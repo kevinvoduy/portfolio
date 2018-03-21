@@ -18,13 +18,13 @@ export default class Connect extends Component {
   }
   render() {
     return (
-      <div className="connect">
+      <div id="connect">
         <div className="heading">
           <h1>{'Let\'s get connected.'}</h1>
           <h2>Have a question or want to work together?</h2>
         </div>
 
-        <div className="form">
+        <div id="form">
           <form>
             <label htmlFor="name">
               <input type="text" name="name" placeholder="Name" onChange={this.onChangeHandler} />

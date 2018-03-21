@@ -40,8 +40,8 @@ export default class NavBar extends Component {
         <ul>
           <li>LOGO.</li>
           <li><a href="/">home</a></li>
-          <li><a href="/">projects</a></li>
-          <li><a href="/">connect</a></li>
+          <li><a href="#linkToProjects">projects</a></li>
+          <li><a href="#connect">connect</a></li>
         </ul>
       </div>
     );

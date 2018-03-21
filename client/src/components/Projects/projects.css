@@ -21,7 +21,11 @@ h2#projects {
 }
 
 .projects.active {
-  cursor: -webkit-grabbing;
+  cursor: ew-resize;
+}
+
+.project:hover {
+  cursor: ew-resize;
 }
 
 .project {

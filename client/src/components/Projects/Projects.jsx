@@ -39,7 +39,7 @@ export default class Projects extends Component {
   render() {
     // do not add a className to first div of return
     return (
-      <div>
+      <div id="linkToProjects">
         <h2 id="projects">Recent Projects.</h2>
         <div className="projects" id="scroll">
           <Project

@@ -1,7 +1,7 @@
-.connect {
-  padding: 10% 25em 12em 25em;
+#connect {
+  padding: 8% 25em 12em 25em;
   background: rgb(51, 53, 71);
-  height: calc(100vh - 8em - 60.89px);
+  height: calc(100vh - 8em - 60px);
 }
 
 .heading {
