@@ -1,20 +1,18 @@
-import React, { Component } from 'react'
-import footer from './footer.css'
-import linkedin from '../../../public/dist/linkedin.svg'
-import git from '../../../public/dist/github.svg'
+import React from 'react';
+import linkedin from '../../../public/dist/linkedin.svg';
+import git from '../../../public/dist/github.svg';
+import './footer.css';
 
-export default class Footer extends Component {
-  render() {
-    return(
-      <div className='footer'>
-        <div className='center'>
-          <div className='social'>
-            <h3><img src={linkedin}/></h3>
-            <h3><img src={git}/></h3>
-          </div>
-          <h5>KEVIN DUY VO <span id='cc'>©2018</span></h5>
-        </div>
+const Footer = () => (
+  <div className="footer">
+    <div className="center">
+      <div className="social">
+        <a href="http://linkedin.com/in/kevinvoduy" ><img src={linkedin} alt="" /></a>
+        <a href="http://github.com/kevinvoduy" ><img src={git} alt="" /></a>
       </div>
-    )
-  }
-}
+      <h5>KEVIN DUY VO<span id="cc"> ©2018</span></h5>
+    </div>
+  </div>
+);
+
+export default Footer;
