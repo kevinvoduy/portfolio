@@ -4,6 +4,14 @@ li {
   margin-left: 1em;
 }
 
+a {
+  color: rgb(235, 123, 160);
+}
+
+a:hover {
+  color: white;
+}
+
 .nav {
   top: 0;
   width: 100%;

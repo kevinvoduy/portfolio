@@ -1,9 +1,17 @@
 import React from 'react';
+import image from '../../../public/dist/image.png';
 import './aboutme.css';
 
 const AboutMe = () => (
   <div>
-    <h1 className="aboutme">About.</h1>
+    <div className="">
+      <div className="profile">
+        <img id="profilepic" src={image} alt="" />
+        <div className="blurb">
+          <h2>Full Stack Engineer</h2>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
