@@ -1,4 +1,5 @@
 .jumbo {
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -15,11 +16,11 @@
 .button {
   display: block;
   margin: .2em auto;
-  width: 36%;
+  min-width: 80px;
   border: 2px solid indigo;
   padding: 12px 12px;
   background: transparent;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .botton:hover {
@@ -32,7 +33,7 @@
 }
 
 .jumbo-text {
-  font-size: 3.5em;
+  font-size: 3em;
   line-height: 1em;
   text-align: center;
   margin: 0 0 0.3em 0;

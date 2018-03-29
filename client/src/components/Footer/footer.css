@@ -1,10 +1,9 @@
 .footer {
-  height: 8em;
   background: rgb(35, 38, 54);
+  padding-bottom: 1em;
 }
 
 .center {
-  width: 60%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -18,11 +17,11 @@
 
 .social a {
   display: inline-block;
-  margin: -1em 1em 1em 1em;
+  margin: 1em 1em;
   background: palevioletred;
-  line-height: 5em;
-  width: 5em;
-  height: 5em;
+  line-height: 4em;
+  width: 4em;
+  height: 4em;
   transition: all .2s ease-in-out;
 }
 
@@ -33,7 +32,7 @@
 
 a img {
   display: block;
-  margin: 1.5em auto;
+  margin: 1em auto;
 }
 
 #cc {

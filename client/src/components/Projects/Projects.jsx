@@ -13,13 +13,11 @@ const Projects = () => (
           <h2>Go With Me</h2>
           <p>{'itinerary app that doesn\'t work yet.'}</p>
         </div>
-
         <div className="prjectImage">
           <img src={project1} alt="Go With Me App" />
         </div>
-
         <div className="techStack">
-          <h3>Tech stack: </h3>
+          <h3>React - Node - Mongo/MySQL - AWS</h3>
         </div>
 
       </div>
@@ -30,14 +28,12 @@ const Projects = () => (
         <div className="prjectImage">
           <img src={project1} alt="Go With Me App" />
         </div>
-
         <div className="projectBio">
-          <h2>Go With Me</h2>
+          <h2>Coffee Meets Fido</h2>
           <p>{'itinerary app that doesn\'t work yet.'}</p>
         </div>
-
         <div className="techStack">
-          <h3>Tech stack: </h3>
+          <h3>React - Node - SQLite - Firebase - Google API - Socket.io</h3>
         </div>
 
       </div>

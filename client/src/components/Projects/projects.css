@@ -16,7 +16,7 @@ h2#projects {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 /* --- start of horizontal scroll ---
@@ -38,7 +38,7 @@ h2#projects {
 --- end of horizontal scroll --- */
 
 .slope img {
-  width: 100%;
+  width: 100%;;
 }
 
 .project {
@@ -49,14 +49,14 @@ h2#projects {
   grid-template-rows: auto 80px;
 }
 .project#imgLeft {
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas:
   "image      bio"
   "tech-stack tech-stack"
 }
 
 .project#imgRight {
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
   "bio        image"
   "tech-stack tech-stack"
@@ -72,11 +72,13 @@ h2#projects {
 
 .projectBio {
   grid-area: bio;
+  margin: auto auto;
 }
 
 .techStack {
   grid-area: tech-stack;
   grid-column: span 2;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {
