@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm-run-all build:client start:server",
     "build:client": "cd client && npm run build",
-    "start:server": "cd server && npm run start"
+    "start:server": "cd rest-server && npm run start"
   },
   "repository": {
     "type": "git",
