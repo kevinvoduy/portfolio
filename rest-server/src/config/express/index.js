@@ -1,7 +1,7 @@
-import express from 'express';
-import parser from 'body-parser';
-import router from '../../routes';
-import path from 'path';
+const express = require('express');
+const parser = require('body-parser');
+const router = require('../../routes');
+const path = require('path');
 
 const middleWare = [
   parser.json(),
@@ -25,4 +25,4 @@ class App {
   // }
 }
 
-export default new App();
+module.exports = new App();
