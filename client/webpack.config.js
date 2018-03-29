@@ -34,7 +34,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  watch: true,
+  watch: false,
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
