@@ -53,14 +53,14 @@ h2#projects {
   grid-template-rows: auto 80px;
 }
 .project#imgLeft {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 5fr 2fr;
   grid-template-areas:
   "image      bio"
   "tech-stack tech-stack"
 }
 
 .project#imgRight {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 5fr;
   grid-template-areas:
   "bio        image"
   "tech-stack tech-stack"

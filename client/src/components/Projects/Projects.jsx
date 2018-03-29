@@ -1,6 +1,8 @@
 import React from 'react';
 import project1 from '../../../public/dist/gowithme.png';
+import project2 from '../../../public/dist/coffeemeetsfido.png';
 import slope from './slope.svg';
+
 import './projects.css';
 
 const Projects = () => (
@@ -26,7 +28,7 @@ const Projects = () => (
       <div className="project" id="imgLeft">
 
         <div className="prjectImage">
-          <img src={project1} alt="Go With Me App" />
+          <img src={project2} alt="Go With Me App" />
         </div>
         <div className="projectBio">
           <h2>Coffee Meets Fido</h2>
