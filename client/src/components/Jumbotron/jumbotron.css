@@ -10,9 +10,6 @@
   transform: translate(-50%, -50%);
   border-radius: 8px;
   width: 60%;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
 }
 
 .button {
