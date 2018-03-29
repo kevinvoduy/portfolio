@@ -1,5 +1,5 @@
 #connect {
-  padding: 0 8px;
+  padding: 3em 8px;
   background: #333547;
   height: calc(100vh - 8em - 60px);
   min-width: 50%;
@@ -86,5 +86,8 @@ label {
 @media (max-width: 1080px) {
   input#submit {
     width: 100%;
+  }
+  #connect {
+    height: 650px;
   }
 }

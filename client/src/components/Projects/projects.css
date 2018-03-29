@@ -41,6 +41,10 @@ h2#projects {
   width: 100%;;
 }
 
+.row {
+  padding: 2em 0 4em 0;
+  background: white;
+}
 .project {
   margin: 3em auto;
   width: 80%;
@@ -81,8 +85,9 @@ h2#projects {
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .project {
+    grid-gap: 0;
     grid-template-rows: auto auto;
     grid-template-areas:
       "image"
@@ -96,6 +101,7 @@ h2#projects {
 
   .projectImage, .projectBio{
     grid-column: span 2;
+    margin-bottom: 2em;
   }
 
   .projectBio {
@@ -103,7 +109,7 @@ h2#projects {
     text-align: center;
   }
 
-  .techStack {
+  .techStack, .slope {
     display: none;
   }
 }

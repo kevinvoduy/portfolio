@@ -5,11 +5,11 @@ li {
 }
 
 a {
-  color: rgb(235, 123, 160);
+  color: white;
 }
 
 a:hover {
-  color: white;
+  color: palevioletred;
   text-shadow: 1px 1px 1px rgb(36, 36, 36);
 }
 
