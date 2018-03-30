@@ -2,17 +2,16 @@ import React from 'react';
 import project1 from '../../../public/dist/gowithme.png';
 import project2 from '../../../public/dist/coffeemeetsfido.png';
 import project3 from '../../../public/dist/trippy.png';
-import slope from './slope.svg';
 
 import './projects.css';
 
 const Projects = () => (
   <div id="linkToProjects">
     <h2 id="projects">Recent Projects.</h2>
-    <div className="row">
+    <div className="row" id="firstRow">
       <div className="project odd" id="imgRight">
 
-        <div className="projectBio" id="right">
+        <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="projectBio" id="right">
           <h2>Go With Me</h2>
           <p>Super chub you are doin me a concern what a nice floof most angery pupper I have ever seen the neighborhood pupper big ol, borking doggo much ruin diet shibe fat boi. sub woofer adorable doggo. Very hand that feed shibe adorable doggo noodle horse wow very biscit, heckin.</p><br />
           <p>Many pats h*ck yapper, super chub. Puggorino heck ur givin me a spook you are doin me a concern fluffer, doge super chub heckin, borkf long woofer pupperino.</p>
@@ -27,7 +26,7 @@ const Projects = () => (
 
       </div>
     </div>
-    <div className="row">
+    <div className="row" id="secondRow">
       <div className="project even" id="imgLeft">
 
         <div className="prjectImage">
@@ -45,7 +44,7 @@ const Projects = () => (
 
       </div>
     </div>
-    <div className="row">
+    <div className="row" id="lastRow">
       <div className="project odd" id="imgRight">
 
         <div className="projectBio" id="right">
@@ -63,7 +62,6 @@ const Projects = () => (
 
       </div>
     </div>
-    <div className="slope"><img alt="" src={slope} /></div>
   </div>
 );
 

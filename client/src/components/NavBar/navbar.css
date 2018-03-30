@@ -10,7 +10,6 @@ a {
 
 a:hover {
   color: palevioletred;
-  text-shadow: 1px 1px 1px rgb(36, 36, 36);
 }
 
 .nav {
@@ -40,6 +39,10 @@ a:hover {
   max-width: 500px;
 }
 
+a {
+  text-decoration: none;
+}
+
 li.logo {
   max-width: 0;
   overflow: hidden;
@@ -53,4 +56,10 @@ li.logo {
 
 li.logo a {
   color: black;
+}
+
+@media (max-width: 324px) {
+  .nav {
+    display: none;
+  }
 }

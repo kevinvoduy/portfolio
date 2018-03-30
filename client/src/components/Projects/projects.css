@@ -51,12 +51,6 @@ h2#projects {
 }
 
 /* --- row layout  --- */
-
-.row {
-  background: white;
-  align-content: center;
-}
-
 .project {
   margin: 0 auto;
   width: 100%;
@@ -67,12 +61,26 @@ h2#projects {
 
 .row .odd {
   background: var(--gray);
-  padding: 8em 0;
+  padding: 3em 0 8em 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 .row .even {
   background: var(--ghost);
-  padding: 8em 0;
+  padding: 3em 0 8em 0;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+#firstRow {
+  background: var(--ghost);
+}
+
+#secondRow {
+  background: var(--gray);
+}
+
+#lastRow {
+  background: var(--gray);
 }
 
 /* --- end of row layout --- */
@@ -155,6 +163,7 @@ h2#projects {
       "image"
       "bio"
   }
+
   .projectBio#left, .projectBio#right {
     margin: auto;
     order: 2;
@@ -184,5 +193,21 @@ h2#projects {
 
   .techStack, .slope {
     display: none;
+  }
+
+  h2#projects {
+    background: whitesmoke;
+  }
+
+  .row .odd {
+    background: whitesmoke;
+    padding: 4em 0 6em 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .row .even {
+    background: gainsboro;
+    padding: 4em 0 6em 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
