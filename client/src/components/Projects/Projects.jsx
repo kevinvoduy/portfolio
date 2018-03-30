@@ -21,7 +21,7 @@ const Projects = () => (
           <img src={project1} alt="Go With Me App" />
         </div>
         <div className="techStack">
-          <h3>React/Redux - Node - Mongo/MySQL - AWS</h3>
+          <h3>React/Redux - Node - Mongo/MySQL - Redis - AWS</h3>
         </div>
 
       </div>

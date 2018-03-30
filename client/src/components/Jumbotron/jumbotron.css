@@ -1,7 +1,7 @@
 .jumbo {
   width: 100%;
   height: 100vh;
-  position: relative;
+  background-color: rgb(60,60,60)
 }
 
 .centered {
@@ -29,7 +29,7 @@ button {
 
 .myName {
   font-weight: bolder;
-  color: indigo;
+  color: rgb(228, 146, 91);
 }
 
 .jumbo-text {
@@ -37,12 +37,33 @@ button {
   line-height: 1em;
   text-align: center;
   margin: 0 0 0.3em 0;
+  font-weight: 900;
 }
 
 @media (max-width: 800px) {
   .button {
     color: white;
     background: rgb(236, 100, 141);
-    border: none;
+    border: 1px solid rgb(236, 100, 141);
+    display: none;
+  }
+
+  .myName {
+    color: rgb(228, 146, 91);
+    font-weight: 500;
+  }
+
+  .jumbo-text {
+    font-size: 3em;
+    font-weight: 300;
+    color: whitesmoke;
+  }
+
+  .container {
+    background: rgb(60,60,60);
+  }
+
+  .container img {
+    visibility: hidden;
   }
 }

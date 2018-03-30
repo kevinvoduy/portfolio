@@ -1,13 +1,14 @@
 :root {
-  --form: dimgray;
-  --bgg: darkgray;
-  --heading: dimgray;
+  --form: darkgray;
+  --bgg: dimgray;
+  --heading: rgb(71, 71, 71);
 }
 
 #connect {
   padding: 3em 8px;
   background: var(--ghost);
-  height: calc(100vh - 11em - 70px);
+  height: 60vh;
+  /* height: calc(100vh - 11em - 70px); */
   min-width: 50%;
   padding-bottom: 20px;
 }
@@ -28,7 +29,7 @@
 .heading h2 {
   margin-top: .5em;
   margin-bottom: 3em;
-  color: whitesmoke;
+  color: var(--bgg);
 }
 
 form {
@@ -40,16 +41,17 @@ input {
   width: 100%;
   display: inline-block;
   border: none;
-  color: white;
-  background-color: var(--bgg);
+  color: var(--heading);
+  background-color: var(--ghost);
   padding: 10px 16px;
   font-size: 1em;
-  line-height: 2em;
-  margin-bottom: .2em;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+  border: 2px solid var(--heading)
 }
 
 ::-webkit-input-placeholder {
-  color: white;
+  color: var(--heading);
 }
 
 textarea:focus, input:focus{
@@ -61,19 +63,20 @@ textarea {
   width: 100%;
   resize: none;
   border: none;
-  color: white;
-  background-color: var(--bgg);
+  color: var(--heading);
+  background-color: var(--ghost);
   padding: 10px 16px;
   font-size: 1em;
   margin-bottom: .5em;
+  border: 2px solid var(--heading)
 }
 
 input#submit {
   width: 8em;
   float: right;
-  color: black;
+  color: var(--heading);
   background: transparent;
-  border: 2px solid black;
+  border: 2px solid var(--heading);
   font-size: 1em;
   margin-bottom: 1em;
   transition: .5s;
@@ -81,7 +84,7 @@ input#submit {
 
 #submit:hover {
   color: var(--ghost);
-  background: black;
+  background: var(--bgg);
   cursor: pointer;
 }
 

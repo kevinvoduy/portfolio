@@ -1,6 +1,6 @@
 :root {
-  --bg: dimgrey;
-  --social: aliceblue;
+  --bg: rgb(66, 66, 66);
+  --social: rgb(228, 146, 91);
 }
 
 .footer {
@@ -18,6 +18,8 @@
   color: white;
   margin: 0;
   text-align: center;
+  letter-spacing: 2px;
+  font-weight:  300;
 }
 
 .social a {
