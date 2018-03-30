@@ -1,3 +1,26 @@
+:root {
+  --gray: whitesmoke;
+  --ghost: ghostwhite;
+  --background: whitesmoke;
+}
+
+/* --- heading --- */
+/* .projects {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  padding-bottom: 3em;
+} */
+
+h2#projects {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3em;
+  background: var(--background);
+  padding: .5em;
+  /* text-shadow: 1px 1px 1px rgb(36, 36, 36); */
+}
+
+/* --- horizontal scroll ---
 #scroll {
   display: flex;
   flex-wrap: nowrap;
@@ -5,21 +28,6 @@
   overflow-y: hidden;
 }
 
-/* --- heading --- */
-.projects {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  padding-bottom: 3em;
-}
-
-h2#projects {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 3em;
-}
-
-/* --- start of horizontal scroll ---
 #scroll.project {
   flex: 0 0 auto;
 }
@@ -38,29 +46,47 @@ h2#projects {
 --- end of horizontal scroll --- */
 
 .slope img {
-  width: 100%;;
+  width: 100%;
+  background: var(--gray);
 }
 
+/* --- row layout  --- */
+
 .row {
-  padding: 2em 0 4em 0;
   background: white;
+  align-content: center;
 }
+
 .project {
-  margin: 3em auto;
-  width: 80%;
+  margin: 0 auto;
+  width: 100%;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px 5px;
   grid-template-rows: auto 80px;
 }
+
+.row .odd {
+  background: var(--gray);
+  padding: 8em 0;
+}
+
+.row .even {
+  background: var(--ghost);
+  padding: 8em 0;
+}
+
+/* --- end of row layout --- */
+/* --- prject image --- */
+
 .project#imgLeft {
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas:
   "image      bio"
   "tech-stack tech-stack"
 }
 
 .project#imgRight {
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
   "bio        image"
   "tech-stack tech-stack"
@@ -74,18 +100,54 @@ h2#projects {
   grid-area: image;
 }
 
+/* --- end of image --- */
+/* --- project bio ---  */
+
 .projectBio {
   grid-area: bio;
   margin: auto auto;
+  max-width: 80%;
+  font-size: 1.4em;
+  font-weight: 300;
+  padding-top: 4em;
 }
+
+.projectBio#left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.projectBio#right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+}
+
+.projectBio button {
+  display: none;
+  color: white;
+  border: 2px solid white;
+  padding: 12px;
+  box-shadow: none;
+  width: 100px;
+  /* font-size: 1em; */
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* --- end of project bio --- */
 
 .techStack {
   grid-area: tech-stack;
   grid-column: span 2;
   margin: 0 auto;
+  padding-top: 2em;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   .project {
     grid-gap: 0;
     grid-template-rows: auto auto;
@@ -93,10 +155,15 @@ h2#projects {
       "image"
       "bio"
   }
+  .projectBio#left, .projectBio#right {
+    margin: auto;
+    order: 2;
+  }
 
   .project#imgLeft, .project#imgRight {
     grid-template-columns: 1fr;
     margin: 0 auto;
+    order: 1;
   }
 
   .projectImage, .projectBio{
@@ -107,6 +174,12 @@ h2#projects {
   .projectBio {
     margin: auto;
     text-align: center;
+    padding-top: 0;
+  }
+
+  .projectBio button {
+    width: 100%;
+    font-weight: 300;
   }
 
   .techStack, .slope {
