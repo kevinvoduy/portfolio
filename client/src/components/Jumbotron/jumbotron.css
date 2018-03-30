@@ -52,7 +52,7 @@ button {
   visibility: hidden;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   .button {
     color: white;
     background: rgb(236, 100, 141);

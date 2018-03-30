@@ -7,7 +7,7 @@
 #connect {
   padding: 3em 8px;
   background: var(--ghost);
-  height: 60vh;
+  height: 38em;
   /* height: calc(100vh - 11em - 70px); */
   min-width: 50%;
   padding-bottom: 20px;
