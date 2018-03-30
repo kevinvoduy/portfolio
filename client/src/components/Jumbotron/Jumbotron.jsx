@@ -9,6 +9,17 @@ const Jumbotron = () => (
     <div className="centered">
       <p className="jumbo-text">{'Hello, I\'m '}<span className="myName">Kevin Vo</span>.</p>
       <p className="jumbo-text">{'I\'m a full stack web developer.'}</p>
+
+      <span className="words-wrapper waiting">
+        <b className="isHidden">
+          <i className="out">H</i>
+          <i className="out">e</i>
+          <i className="out">l</i>
+          <i className="out">l</i>
+          <i className="out">o</i>
+        </b>
+      </span>
+
       <button className="button" href="#projects">View my work<i className="chevron right icon" /></button>
     </div>
   </div>

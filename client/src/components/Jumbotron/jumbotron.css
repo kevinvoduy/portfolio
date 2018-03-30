@@ -40,6 +40,18 @@ button {
   font-weight: 900;
 }
 
+.words-wrapper {
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.words-wrapper b {
+  display: inline-block;
+  /* position: absolute; */
+  white-space: nowrap;
+  visibility: hidden;
+}
+
 @media (max-width: 800px) {
   .button {
     color: white;

@@ -24,11 +24,12 @@
 
 .social a {
   display: inline-block;
-  margin: 1em 1em;
+  margin: 1em .5em;
   background: var(--social);
   line-height: 4em;
-  width: 4em;
-  height: 4em;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
   transition: all .2s ease-in-out;
 }
 
