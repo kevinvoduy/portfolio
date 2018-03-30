@@ -1,7 +1,7 @@
 :root {
-  --gray: whitesmoke;
-  --ghost: ghostwhite;
-  --background: whitesmoke;
+  --gray: ghostwhite;
+  --ghost: whitesmoke;
+  --background: ghostwhite;
 }
 
 /* --- heading --- */
@@ -115,7 +115,6 @@ h2#projects {
   grid-area: bio;
   margin: auto auto;
   max-width: 80%;
-  font-size: 1.4em;
   font-weight: 300;
   padding-top: 4em;
 }

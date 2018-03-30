@@ -1,5 +1,10 @@
+:root {
+  --bg: dimgrey;
+  --social: aliceblue;
+}
+
 .footer {
-  background: rgb(35, 38, 54);
+  background: var(--bg);
   padding-bottom: 1em;
 }
 
@@ -18,7 +23,7 @@
 .social a {
   display: inline-block;
   margin: 1em 1em;
-  background: palevioletred;
+  background: var(--social);
   line-height: 4em;
   width: 4em;
   height: 4em;
@@ -36,5 +41,5 @@ a img {
 }
 
 #cc {
-  color: palevioletred;
+  color: var(--social);
 }

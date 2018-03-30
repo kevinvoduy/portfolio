@@ -1,7 +1,13 @@
+:root {
+  --form: dimgray;
+  --bgg: darkgray;
+  --heading: dimgray;
+}
+
 #connect {
   padding: 3em 8px;
-  background: #333547;
-  height: calc(100vh - 8em - 60px);
+  background: var(--ghost);
+  height: calc(100vh - 11em - 70px);
   min-width: 50%;
   padding-bottom: 20px;
 }
@@ -14,8 +20,8 @@
 .heading h1 {
   font-size: 3em;
   margin-bottom: 0;
-  color: palevioletred;
-  text-shadow: 1px 1px 1px rgb(36, 36, 36);
+  color: var(--heading);
+  /* text-shadow: 1px 1px 1px rgb(36, 36, 36); */
   text-align: center;
 }
 
@@ -35,9 +41,9 @@ input {
   display: inline-block;
   border: none;
   color: white;
-  background-color: rgb(35, 38, 54);
+  background-color: var(--bgg);
   padding: 10px 16px;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 2em;
   margin-bottom: .2em;
 }
@@ -56,26 +62,26 @@ textarea {
   resize: none;
   border: none;
   color: white;
-  background-color: rgb(35, 38, 54);
+  background-color: var(--bgg);
   padding: 10px 16px;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: .5em;
 }
 
 input#submit {
   width: 8em;
   float: right;
-  color: white;
+  color: black;
   background: transparent;
-  border: 2px solid white;
-  font-size: 1.2em;
+  border: 2px solid black;
+  font-size: 1em;
   margin-bottom: 1em;
   transition: .5s;
 }
 
 #submit:hover {
-  color: rgb(51, 53, 71);
-  background: white;
+  color: var(--ghost);
+  background: black;
   cursor: pointer;
 }
 
