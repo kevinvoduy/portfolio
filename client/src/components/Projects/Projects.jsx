@@ -55,10 +55,10 @@ const Projects = () => (
 
         <div className="projectBio" id="right">
           <h2>Trippy Trip</h2>
-          <span id="responsibilities">Utilizes web sockets and Google Maps API for instant notifications and updates</span>
+          <span id="responsibilities">Takes advantage of jQuery and Boostrap libraries for rapid design work</span>
 
           <h4>Technology</h4>
-          <p>Built on scalable Node infrastructure and React framework. Integrates with Google Maps API for address lookup and location services. Uses a Firebase layer as middle-man for delpoyments and authenitication strategies.</p>
+          <p>Hey Leo why were you such a bad dog today? You ate my birthday cake and made one of the kids at the party cry. Please try not to do that again Leo.</p>
 
           <button>Info</button>
         </div>

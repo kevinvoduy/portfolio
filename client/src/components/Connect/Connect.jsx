@@ -41,7 +41,7 @@ export default class Connect extends Component {
             </label>
             <br />
 
-            <input id="submit" type="submit" value="SUBMIT" />
+            <input id="submit" value="SUBMIT" />
           </form>
         </div>
       </div>
