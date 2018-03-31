@@ -11,7 +11,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 8px;
-  width: 60%;
+  width: 42em;
+  max-width: 80%;
 }
 
 /* --- start of button --- */
@@ -69,12 +70,11 @@ button:hover span:after {
   color: rgb(228, 146, 91);
 }
 
-.jumbo-text {
+.jumbo-text{
   font-size: 3em;
   line-height: 1em;
   text-align: center;
   margin: 0 0 0.3em 0;
-  font-weight: 900;
 }
 
 @media (max-width: 750px) {
@@ -96,6 +96,11 @@ button:hover span:after {
     color: whitesmoke;
   }
 
+  .jumbo-text p {
+    font-size: 1em;
+    white-space: normal;
+  }
+
   .container {
     background: rgb(60,60,60);
   }
@@ -104,3 +109,30 @@ button:hover span:after {
     visibility: hidden;
   }
 }
+
+/* --- typing feature --- */
+
+@media (min-width: 750px) {
+  .typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--social); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation:
+      typing 3s steps(31, end),
+      blink-caret .6s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--social); }
+  }
+}
+/* --- end of type feature --- */
