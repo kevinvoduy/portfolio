@@ -3,7 +3,7 @@ import AOS from 'aos';
 import project1 from '../../../public/dist/gowithme.png';
 import project2 from '../../../public/dist/coffeemeetsfido.png';
 import project3 from '../../../public/dist/trippy.png';
-import '../../../node_modules/aos/dist/aos.css';
+import '../../../../node_modules/aos/dist/aos.css';
 import './projects.css';
 
 class Projects extends React.Component {
