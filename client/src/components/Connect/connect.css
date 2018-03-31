@@ -61,6 +61,7 @@ textarea:focus, input:focus{
 textarea {
   height: 10em;
   width: 100%;
+  font-family: 'Roboto';
   resize: none;
   border: none;
   color: var(--heading);

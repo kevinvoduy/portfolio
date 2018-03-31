@@ -181,6 +181,10 @@ h2#projects {
 }
 
 @media (max-width: 1080px) {
+  h2#projects {
+    padding: 1.5em 0 0 0;
+  }
+
   .project {
     grid-gap: 0;
     grid-template-rows: auto auto;
@@ -226,13 +230,13 @@ h2#projects {
 
   .row .odd {
     background: var(--gray);
-    padding: 4em 0 6em 0;
+    padding: 2em 0 6em 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
   .row .even {
     background: var(--ghost);
-    padding: 4em 0 6em 0;
+    padding: 2em 0 6em 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }

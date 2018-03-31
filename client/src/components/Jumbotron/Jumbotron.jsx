@@ -1,10 +1,12 @@
 import React from 'react';
 import ocean from '../../../public/dist/ocean.jpg';
+import oceanalt from '../../../public/dist/ocean-alt.jpg';
 import './jumbotron.css';
 
 const Jumbotron = () => (
   <div className="container">
     <img className="jumbo" src={ocean} alt="" />
+    <img className="jumbo-alt" src={oceanalt} alt="" />
 
     <div className="centered">
       <p className="jumbo-text">{'Hello, I\'m '}<span className="myName">Kevin Vo</span>.</p>
