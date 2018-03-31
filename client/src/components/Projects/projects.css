@@ -1,5 +1,5 @@
 :root {
-  --gray: ghostwhite;
+  --gray: white;
   --ghost: whitesmoke;
   --background: ghostwhite;
 }
@@ -15,8 +15,8 @@ h2#projects {
   margin: 0 auto;
   text-align: center;
   font-size: 3em;
-  background: var(--background);
-  padding: .5em;
+  background: var(--gray);
+  padding: 1.5em 0 1em 0;
   /* text-shadow: 1px 1px 1px rgb(36, 36, 36); */
 }
 
@@ -63,12 +63,14 @@ h2#projects {
   background: var(--gray);
   padding: 3em 0 8em 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  transition: clip-path 1s ease;
 }
 
 .row .even {
   background: var(--ghost);
   padding: 3em 0 8em 0;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  transition: clip-path 1s ease;
 }
 
 #firstRow {
@@ -91,13 +93,14 @@ h2#projects {
   grid-template-areas:
   "image      bio"
   "tech-stack tech-stack"
+
 }
 
 .project#imgRight {
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
   "bio        image"
-  "tech-stack tech-stack"
+  "tech-stack tech-stack";
 }
 
 .project img {
@@ -115,8 +118,31 @@ h2#projects {
   grid-area: bio;
   margin: auto auto;
   max-width: 80%;
-  font-weight: 300;
-  padding-top: 4em;
+  font-weight: 200;
+  padding-top: 3em;
+}
+
+.projectBio h2 {
+  margin-bottom: 2px;
+}
+
+#responsibilities {
+  margin: 10px 0 1em 1px;
+  text-transform: uppercase;
+  color: var(--social);
+  font-size: .8em;
+  letter-spacing: 2px;
+}
+
+.projectBio h4 {
+  margin: .5em 0 .5em 0;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+
+.projectBio p {
+  margin: 0 0 8px 0;
+  letter-spacing: 1px;
 }
 
 .projectBio#left {
@@ -195,17 +221,17 @@ h2#projects {
   }
 
   h2#projects {
-    background: whitesmoke;
+    background: var(--gray);
   }
 
   .row .odd {
-    background: whitesmoke;
+    background: var(--gray);
     padding: 4em 0 6em 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
   .row .even {
-    background: gainsboro;
+    background: var(--ghost);
     padding: 4em 0 6em 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }

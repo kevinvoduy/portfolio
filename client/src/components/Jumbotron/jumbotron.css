@@ -6,6 +6,7 @@
 
 .centered {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -13,22 +14,58 @@
   width: 60%;
 }
 
+/* --- start of button --- */
+
+.centered a {
+  display: inline-block;
+}
+
 button {
   display: block;
-  margin: .2em auto;
   min-width: 80px;
-  border: 2px solid indigo;
-  padding: 12px 12px;
+  border: 2px solid var(--social);
+  padding: 1em 2em;
   background: transparent;
   font-size: 1em;
+  transition: all 0.5s;
 }
 
-.botton:hover {
+button span {
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
 }
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background: var(--social);
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* --- end of button --- */
 
 .myName {
-  font-weight: bolder;
+  font-weight: bold;
   color: rgb(228, 146, 91);
 }
 
@@ -38,18 +75,6 @@ button {
   text-align: center;
   margin: 0 0 0.3em 0;
   font-weight: 900;
-}
-
-.words-wrapper {
-  vertical-align: top;
-  overflow: hidden;
-}
-
-.words-wrapper b {
-  display: inline-block;
-  /* position: absolute; */
-  white-space: nowrap;
-  visibility: hidden;
 }
 
 @media (max-width: 750px) {

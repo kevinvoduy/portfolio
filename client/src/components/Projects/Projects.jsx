@@ -13,15 +13,18 @@ const Projects = () => (
 
         <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="projectBio" id="right">
           <h2>Go With Me</h2>
-          <p>Super chub you are doin me a concern what a nice floof most angery pupper I have ever seen the neighborhood pupper big ol, borking doggo much ruin diet shibe fat boi. sub woofer adorable doggo. Very hand that feed shibe adorable doggo noodle horse wow very biscit, heckin.</p><br />
-          <p>Many pats h*ck yapper, super chub. Puggorino heck ur givin me a spook you are doin me a concern fluffer, doge super chub heckin, borkf long woofer pupperino.</p>
+          <span id="responsibilities">Built on scalable service oriented Node infrastructure and continuous delivery pipeline</span>
+
+          <h4>Technology</h4>
+          <p>Built Redis cache with cron workers and load balancer for optimized content delivery. Designed backend architecture and ORM/ODM database schemas. Created search and itineary building modules.</p>
+
           <button>Info</button>
         </div>
         <div className="prjectImage">
           <img src={project1} alt="Go With Me App" />
         </div>
         <div className="techStack">
-          <h3>React/Redux - Node - Mongo/MySQL - Redis - AWS</h3>
+          <h3>React/Redux - Node - Mongo/MySQL - Redis - AWS - Nginx</h3>
         </div>
 
       </div>
@@ -34,12 +37,15 @@ const Projects = () => (
         </div>
         <div className="projectBio" id="left">
           <h2>Coffee Meets Fido</h2>
-          <p>Super chub you are doin me a concern what a nice floof most angery pupper I have ever seen the neighborhood pupper big ol, borking doggo much ruin diet shibe fat boi. sub woofer adorable doggo. Very hand that feed shibe adorable doggo noodle horse wow very biscit, heckin.</p><br />
-          <p>Many pats h*ck yapper, super chub. Puggorino heck ur givin me a spook you are doin me a concern fluffer, doge super chub heckin, borkf long woofer pupperino.</p>
+          <span id="responsibilities">Utilizes web sockets and Google Maps API for instant notifications and updates</span>
+
+          <h4>Technology</h4>
+          <p>Built on Node infrastructure and React framework. Integrates with Google Maps API for address lookup and location services. Uses a Firebase layer as middle-man for delpoyments and authenitication strategies.</p>
+
           <button>Info</button>
         </div>
         <div className="techStack">
-          <h3>React - Node - SQLite - Firebase - Google API - Socket.io</h3>
+          <h3>React - Node - SQLite - Google API - Socket.io - Firebase</h3>
         </div>
 
       </div>
@@ -49,15 +55,18 @@ const Projects = () => (
 
         <div className="projectBio" id="right">
           <h2>Trippy Trip</h2>
-          <p>Super chub you are doin me a concern what a nice floof most angery pupper I have ever seen the neighborhood pupper big ol, borking doggo much ruin diet shibe fat boi. sub woofer adorable doggo. Very hand that feed shibe adorable doggo noodle horse wow very biscit, heckin.</p><br />
-          <p>Many pats h*ck yapper, super chub. Puggorino heck ur givin me a spook you are doin me a concern fluffer, doge super chub heckin, borkf long woofer pupperino.</p>
+          <span id="responsibilities">Utilizes web sockets and Google Maps API for instant notifications and updates</span>
+
+          <h4>Technology</h4>
+          <p>Built on scalable Node infrastructure and React framework. Integrates with Google Maps API for address lookup and location services. Uses a Firebase layer as middle-man for delpoyments and authenitication strategies.</p>
+
           <button>Info</button>
         </div>
         <div className="prjectImage">
           <img src={project3} alt="Go With Me App" />
         </div>
         <div className="techStack">
-          <h3>React - Bootstrap - MySQL - Heroku</h3>
+          <h3>jQuery - Bootstrap - MySQL - Heroku</h3>
         </div>
 
       </div>
