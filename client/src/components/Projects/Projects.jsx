@@ -23,6 +23,7 @@ class Projects extends React.Component {
               id="right"
               data-aos="fade-right"
               data-aos-offset="600"
+              data-aos-once="true"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
@@ -38,6 +39,7 @@ class Projects extends React.Component {
               className="prjectImage"
               data-aos="fade-left"
               data-aos-offset="600"
+              data-aos-once="true"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
@@ -56,6 +58,7 @@ class Projects extends React.Component {
               className="prjectImage"
               data-aos="fade-up-right"
               data-aos-offset="600"
+              data-aos-once="true"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
@@ -66,6 +69,7 @@ class Projects extends React.Component {
               id="left"
               data-aos="fade-up-left"
               data-aos-offset="600"
+              data-aos-once="true"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
@@ -91,6 +95,7 @@ class Projects extends React.Component {
               id="right"
               data-aos="zoom-out-up"
               data-aos-offset="600"
+              data-aos-once="true"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
@@ -106,6 +111,7 @@ class Projects extends React.Component {
               className="prjectImage"
               data-aos="zoom-out-up"
               data-aos-offset="600"
+              data-aos-once="true"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
