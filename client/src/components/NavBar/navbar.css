@@ -58,6 +58,8 @@ li.logo a {
   color: black;
 }
 
+/* -- scrolling css --- */
+
 @media (max-width: 324px) {
   .nav {
     display: none;

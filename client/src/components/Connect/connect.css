@@ -87,7 +87,7 @@ input#submit {
 #submit:hover {
   color: var(--ghost);
   background: var(--heading);
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 label {
