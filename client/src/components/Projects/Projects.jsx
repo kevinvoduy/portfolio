@@ -103,7 +103,7 @@ class Projects extends React.Component {
               <span id="responsibilities">Takes advantage of jQuery and Boostrap libraries for rapid design work</span>
 
               <h4>Technology</h4>
-              <p>Hey Leo why were you such a bad dog today? You ate my birthday cake and made one of the kids at the party cry. Please try not to do that again Leo.</p>
+              <p>Trippy Trip is a mobile first web application. Designed with metrics widgets that asynchronously fetches from MySQL. Leverages jQuery for awesome animations like front page carousel and parallax.</p>
 
               <button>Info</button>
             </div>

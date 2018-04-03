@@ -86,7 +86,7 @@ input#submit {
 
 #submit:hover {
   color: var(--ghost);
-  background: var(--bgg);
+  background: var(--heading);
   cursor: pointer;
 }
 
