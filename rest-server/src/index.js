@@ -3,7 +3,14 @@ const App = require('./config/express');
 const compression = require('compression');
 
 const app = App.express;
+
 app.use(compression());
+app.get('*.js', function (req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  console.log('entrypoint: bundle.js.gz');
+  next();
+});
 
 const server = http.createServer(app);
 const PORT = process.env.PORT || 3000;

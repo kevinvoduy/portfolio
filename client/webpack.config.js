@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const CompressionPlugin = require('compression-webpack-plugin');
 require('dotenv').config();
 
 module.exports = {
@@ -38,34 +39,20 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-        DEV_REST_SERVER_URL: JSON.stringify(process.env.DEV_REST_SERVER_URL),
-        REST_SERVER_URL: JSON.stringify(process.env.REST_SERVER_URL),
+        NODE_ENV: JSON.stringify('production'),
       },
+    }),
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8,
     }),
   ],
   optimization: {
     minimize: true,
-    runtimeChunk: true,
-    splitChunks: {
-      chunks: 'async',
-      minSize: 1000,
-      minChunks: 2,
-      maxAsyncRequests: 5,
-      maxInitialRequests: 3,
-      name: true,
-      cacheGroups: {
-        default: {
-          minChunks: 1,
-          priority: -20,
-          reuseExistingChunk: true,
-        },
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10,
-        },
-      },
-    },
+    mergeDuplicateChunks: true,
   },
   performance: {
     hints: false,
