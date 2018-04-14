@@ -1,10 +1,9 @@
 import React from 'react';
-import desk from '../../../public/dist/desk.jpg';
 import './jumbotron.css';
 
 const Jumbotron = () => (
   <div className="container">
-    <img className="jumbo" src={desk} alt="" />
+    <div className="jumbo" />
 
     <div className="centered">
       <div className="sad">

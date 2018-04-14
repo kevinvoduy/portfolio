@@ -1,5 +1,5 @@
 :root {
-  --gray: white;
+  --white: white;
   --ghost: whitesmoke;
   --background: ghostwhite;
 }
@@ -15,9 +15,8 @@ h2#projects {
   margin: 0 auto;
   text-align: center;
   font-size: 3em;
-  background: var(--gray);
+  background: var(--white);
   padding: 1.5em 0 1em 0;
-  /* text-shadow: 1px 1px 1px rgb(36, 36, 36); */
 }
 
 /* --- horizontal scroll ---
@@ -47,7 +46,7 @@ h2#projects {
 
 .slope img {
   width: 100%;
-  background: var(--gray);
+  background: var(--white);
 }
 
 /* --- row layout  --- */
@@ -60,7 +59,7 @@ h2#projects {
 }
 
 .row .odd {
-  background: var(--gray);
+  background: var(--white);
   padding: 3em 0 8em 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   transition: clip-path 1s ease;
@@ -78,11 +77,11 @@ h2#projects {
 }
 
 #secondRow {
-  background: var(--gray);
+  background: linear-gradient(var(--ghost), var(--white));
 }
 
 #lastRow {
-  background: var(--gray);
+  background: var(--white);
 }
 
 /* --- end of row layout --- */
@@ -119,7 +118,7 @@ h2#projects {
   margin: auto auto;
   max-width: 80%;
   padding-top: 1em;
-  font-size: 1.2vw;
+  font-size: calc(16px + (20 - 16) * (100vw - 1080px)/(1000));
 }
 
 .projectBio h2 {
@@ -226,11 +225,11 @@ h2#projects {
   }
 
   h2#projects {
-    background: var(--gray);
+    background: var(--white);
   }
 
   .row .odd {
-    background: var(--gray);
+    background: var(--white);
     padding: 2em 0 6em 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }

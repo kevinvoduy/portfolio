@@ -5,6 +5,12 @@
   width: 100%;
   overflow: hidden;
   object-fit: cover;
+  background-image: url('../../../public/dist/desk.jpg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbo-alt {
@@ -31,12 +37,14 @@
 button {
   display: block;
   min-width: 80px;
-  border: 2px solid var(--social);
-  border-radius: 4px;
   padding: 1em 2em;
-  background: transparent;
   font-size: 1em;
   transition: all 0.5s;
+  background: lightsalmon;
+  border: none;
+  border-bottom: 3px solid coral;
+  border-radius: 32px;
+  box-shadow: 0px 8px 28px coral;
 }
 
 button span {
@@ -44,7 +52,7 @@ button span {
   display: inline-block;
   position: relative;
   transition: 0.5s;
-  color: black;
+  color: whitesmoke;
   text-transform: uppercase;
 }
 
@@ -64,7 +72,6 @@ button:hover span {
 button:hover {
   cursor: pointer;
   color: white;
-  background: var(--social);
 }
 
 button:hover span:after {
@@ -76,11 +83,11 @@ button:hover span:after {
 
 .myName {
   font-weight: bold;
-  color: var(--social);
+  color: lightsalmon;
 }
 
 .jumbo-text{
-  font-size: 4vw;
+  font-size: calc(42px + (58 - 42) * (100vw - 1080px)/(1920 - 1080));
   line-height: 1.2em;
   text-align: center;
   margin: 0;
@@ -146,12 +153,12 @@ button:hover span:after {
 @media (min-width: 750px) {
   .typewriter p {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid var(--social); /* The typwriter cursor */
+    border-right: .15em solid lightsalmon; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto .4em auto; /* Gives that scrolling effect as the typing happens */
     animation:
       typing 2.5s steps(26, end),
-      blink-caret .6s step-end infinite;
+      blink-caret .8s step-end infinite;
   }
 
   /* The typing effect */
@@ -163,7 +170,7 @@ button:hover span:after {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: var(--social); }
+    50% { border-color: lightsalmon; }
   }
 }
 /* --- end of type feature --- */
