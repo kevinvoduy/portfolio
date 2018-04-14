@@ -1,7 +1,7 @@
 import React from 'react';
 import AOS from 'aos';
 import project1 from '../../../public/dist/gowithme.png';
-import project2 from '../../../public/dist/coffeemeetsfido.jpg';
+import project2 from '../../../public/dist/coffeemeetsfido.png';
 import project3 from '../../../public/dist/trippy.jpg';
 import '../../../../node_modules/aos/dist/aos.css';
 import './projects.css';
@@ -18,7 +18,15 @@ class Projects extends React.Component {
         <div className="row" id="firstRow">
           <div className="project odd" id="imgRight" >
 
-            <div className="projectBio" id="right">
+            <div
+              className="projectBio"
+              id="right"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-once="true"
+            >
               <h2>Go With Me</h2>
               <span id="responsibilities">Built on scalable service oriented Node infrastructure and continuous delivery pipeline</span>
 
@@ -27,7 +35,14 @@ class Projects extends React.Component {
 
               <button>Info</button>
             </div>
-            <div className="prjectImage">
+            <div
+              className="prjectImage"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-once="true"
+            >
               <img src={project1} alt="Go With Me App" />
             </div>
             <div className="techStack">
@@ -39,10 +54,25 @@ class Projects extends React.Component {
         <div className="row" id="secondRow">
           <div className="project even" id="imgLeft">
 
-            <div className="prjectImage">
+            <div
+              className="prjectImage"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-once="true"
+            >
               <img src={project2} alt="Go With Me App" />
             </div>
-            <div className="projectBio" id="left">
+            <div
+              className="projectBio"
+              id="left"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-once="true"
+            >
               <h2>Coffee Meets Fido</h2>
               <span id="responsibilities">Utilizes web sockets and Google Maps API for instant notifications and updates</span>
 
@@ -60,7 +90,15 @@ class Projects extends React.Component {
         <div className="row" id="lastRow">
           <div className="project odd" id="imgRight">
 
-            <div className="projectBio" id="right">
+            <div
+              className="projectBio"
+              id="right"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-once="true"
+            >
               <h2>Trippy Trip</h2>
               <span id="responsibilities">Takes advantage of jQuery and Boostrap libraries for rapid design work</span>
 
@@ -69,7 +107,14 @@ class Projects extends React.Component {
 
               <button>Info</button>
             </div>
-            <div className="prjectImage">
+            <div
+              className="prjectImage"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-once="true"
+            >
               <img src={project3} alt="Go With Me App" />
             </div>
             <div className="techStack">

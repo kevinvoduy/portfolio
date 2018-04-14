@@ -68,7 +68,7 @@ h2#projects {
 
 .row .even {
   background: var(--ghost);
-  padding: 3em 0 8em 0;
+  padding: 2em 0 8em 0;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   transition: clip-path 1s ease;
 }
@@ -118,7 +118,7 @@ h2#projects {
   grid-area: bio;
   margin: auto auto;
   max-width: 80%;
-  padding-top: 3em;
+  padding-top: 1em;
   font-size: 1.2vw;
 }
 
