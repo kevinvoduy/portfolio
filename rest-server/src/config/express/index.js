@@ -1,12 +1,14 @@
 const express = require('express');
 const parser = require('body-parser');
-const router = require('../../routes');
+const compression = require('compression');
 const path = require('path');
+const router = require('../../routes');
 
 const middleWare = [
+  compression(),
   parser.json(),
   parser.urlencoded({ extended: true }),
-  express.static(path.resolve(__dirname, '../../../../client/public'))
+  express.static(path.resolve(__dirname, '../../../../client/public')),
 ];
 
 class App {
@@ -18,6 +20,11 @@ class App {
 
   mountMiddleWare() {
     this.express.use(...middleWare);
+    this.express.get('*.js', function (req, res, next) {
+      req.url = req.url + '.gz';
+      res.set('Content-Encoding', 'gzip');
+      next();
+    });
   }
 
   // mountRoutes() {
