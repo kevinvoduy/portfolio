@@ -1,8 +1,8 @@
 import React from 'react';
 import AOS from 'aos';
 import project1 from '../../../public/dist/gowithme.png';
-import project2 from '../../../public/dist/coffeemeetsfido.png';
-import project3 from '../../../public/dist/trippy.png';
+import project2 from '../../../public/dist/coffeemeetsfido.jpg';
+import project3 from '../../../public/dist/trippy.jpg';
 import '../../../../node_modules/aos/dist/aos.css';
 import './projects.css';
 

@@ -89,7 +89,7 @@ h2#projects {
 /* --- prject image --- */
 
 .project#imgLeft {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 5fr 3fr;
   grid-template-areas:
   "image      bio"
   "tech-stack tech-stack"
@@ -97,7 +97,7 @@ h2#projects {
 }
 
 .project#imgRight {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 3fr 5fr;
   grid-template-areas:
   "bio        image"
   "tech-stack tech-stack";
@@ -118,8 +118,8 @@ h2#projects {
   grid-area: bio;
   margin: auto auto;
   max-width: 80%;
-  font-weight: 200;
   padding-top: 3em;
+  font-size: 1.2vw;
 }
 
 .projectBio h2 {
@@ -213,6 +213,7 @@ h2#projects {
     margin: auto;
     text-align: center;
     padding-top: 0;
+    font-size: 1.2em;
   }
 
   .projectBio button {
