@@ -47,11 +47,13 @@ input {
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: .5em;
-  border: 2px solid var(--heading)
+  border: 2px solid var(--heading);
+  border-radius: 4px;
 }
 
 ::-webkit-input-placeholder {
   color: var(--heading);
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
 }
 
 textarea:focus, input:focus{
@@ -69,7 +71,8 @@ textarea {
   padding: 10px 16px;
   font-size: 1em;
   margin-bottom: .5em;
-  border: 2px solid var(--heading)
+  border: 2px solid var(--heading);
+  border-radius: 4px;
 }
 
 input#submit {
@@ -78,6 +81,7 @@ input#submit {
   color: var(--heading);
   background: transparent;
   border: 2px solid var(--heading);
+  border-radius: 4px;
   font-size: 1em;
   margin-bottom: 1em;
   transition: .5s;

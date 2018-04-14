@@ -23,7 +23,7 @@ class Projects extends React.Component {
               <span id="responsibilities">Built on scalable service oriented Node infrastructure and continuous delivery pipeline</span>
 
               <h4>Technology</h4>
-              <p>Built Redis cache with cron workers and load balancer for optimized content delivery. Designed backend architecture and ORM/ODM database schemas. Created search and itineary building modules.</p>
+              <p>Redis cache with cron workers and load balancer for optimized content delivery. Designed backend architecture and ORM/ODM database schemas. Created search and itineary building modules.</p>
 
               <button>Info</button>
             </div>
