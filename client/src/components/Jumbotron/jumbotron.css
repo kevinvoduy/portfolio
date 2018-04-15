@@ -1,3 +1,5 @@
+/* --- start of background --- */
+
 .jumbo {
   display: grid;
   grid-auto-columns: 1fr;
@@ -12,6 +14,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* --- end of background --- */
 
 .centered {
   position: absolute;
@@ -75,6 +79,7 @@ button:hover span:after {
 }
 
 /* --- end of button --- */
+/* --- start of heading --- */
 
 .myName {
   font-weight: bold;
@@ -87,6 +92,8 @@ button:hover span:after {
   text-align: center;
   margin: 0;
 }
+
+/* --- end of heading --- */
 
 @media (max-width: 750px) {
   .centered {
