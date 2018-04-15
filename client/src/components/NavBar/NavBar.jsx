@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import 'smoothscroll';
 import './navbar.css';
 
@@ -13,7 +14,7 @@ export default class NavBar extends Component {
     this.updateSroll = this.updateScroll.bind(this);
   }
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', _.throttle(this.handleScroll, 100));
     this.updateScroll();
   }
 
@@ -39,7 +40,7 @@ export default class NavBar extends Component {
     return (
       <div className="nav">
         <ul>
-          <li>LOGO.</li>
+          <li>LET GO.</li>
           <li><a href="/">home</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#connect">connect</a></li>

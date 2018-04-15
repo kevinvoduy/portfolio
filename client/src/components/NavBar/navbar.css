@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-  color: rgb(230, 163, 119);
+  color: var(--social);
 }
 
 .nav {
