@@ -132,6 +132,7 @@ button:hover span:after {
 
   .jumbo {
     filter: blur(3px);
+    background-attachment: scroll;
   }
 
   .jumbo-text {
