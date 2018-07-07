@@ -28,7 +28,7 @@ class Projects extends React.Component {
               <span id="responsibilities">Built on scalable service oriented Node architecture and AWS cloud infrastructure</span>
 
               <h4>Technology</h4>
-              <p>Designed cloud infrastructure with elastic load balancing and storage. Leveraged web sockets to get real time message updates. Implemented image upload and resizing with AWS S3 and Lambda.</p>
+              <p>Designed UX with Sass. Built cloud infrastructure with elastic load balancing and storage. Leveraged web sockets to get real time message updates. Implemented image upload and resizing with AWS S3 and Lambda.</p>
 
               <button href="http://discor.us"><span>View</span></button>
             </div>
