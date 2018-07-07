@@ -1,6 +1,6 @@
 import React from 'react';
 import AOS from 'aos';
-import '../../../../node_modules/aos/dist/aos.css';
+import '/styles/aos.css';
 import './projects.css';
 
 class Projects extends React.Component {
