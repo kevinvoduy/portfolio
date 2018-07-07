@@ -30,7 +30,7 @@ class Projects extends React.Component {
               <h4>Technology</h4>
               <p>Designed cloud infrastructure with elastic load balancing and storage. Leveraged web sockets to get real time message updates. Implemented image upload and resizing with AWS S3 and Lambda.</p>
 
-              <button href="http://discor.us">View</button>
+              <button href="http://discor.us"><span>View</span></button>
             </div>
             <div
               className="prjectImage"
@@ -66,7 +66,7 @@ class Projects extends React.Component {
               <h4>Technology</h4>
               <p>Redis cache with cron workers and load balancer for optimized content delivery. Designed backend architecture and ORM/ODM database schemas. Created search and itineary building modules.</p>
 
-              <a href="https://github.com/GoWithMeL1FB"><button>Code</button></a>
+              <a href="https://github.com/GoWithMeL1FB"><button><span>Code</span></button></a>
             </div>
             <div
               className="prjectImage"
@@ -112,7 +112,7 @@ class Projects extends React.Component {
               <h4>Technology</h4>
               <p>Built on Node infrastructure and React framework. Integrates with Google Maps API for address lookup and location services. Uses a Firebase layer as middle-man for delpoyments and authenitication strategies.</p>
 
-              <a href="https://github.com/DangerDogs/BoneBuds"><button>Code</button></a>
+              <a href="https://github.com/DangerDogs/BoneBuds"><button><span>Code</span></button></a>
             </div>
             <div className="techStack">
               <h3>React - Node - SQLite - Google API - Socket.io - Firebase</h3>

@@ -155,7 +155,7 @@ h2#projects {
 }
 
 .projectBio button {
-  /* display: none; */
+  display: block;
   color: white;
   background: linear-gradient(to bottom right, lightsalmon, coral);
   box-shadow: 0px 6px 22px 0px lightsalmon;
@@ -166,6 +166,39 @@ h2#projects {
   margin-top: 1em;
   text-transform: uppercase;
   width: 100px;
+}
+
+.projectBio button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.projectBio button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.projectBio button:hover span {
+  padding-right: 18px;
+}
+
+.projectBio button:hover {
+  cursor: pointer;
+  color: white;
+  width: 110px;
+}
+
+.projectBio button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /* --- end of project bio --- */
