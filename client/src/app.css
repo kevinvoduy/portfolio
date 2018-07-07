@@ -1,11 +1,11 @@
 :root {
   --bg: rgb(66,66,66);
-  --social: lightsalmon;
+  --social: #ff8e61;
   --form: darkgray;
   --bgg: dimgray;
   --heading: rgb(71,71,71);
   --white: white;
-  --ghost: whitesmoke;
+  --ghost: #F9FAFA;
   --background: ghostwhite;
 }
 

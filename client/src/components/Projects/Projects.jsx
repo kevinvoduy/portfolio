@@ -1,8 +1,5 @@
 import React from 'react';
 import AOS from 'aos';
-import project1 from '../../../public/dist/gowithme.png';
-import project2 from '../../../public/dist/coffeemeetsfido.png';
-import project3 from '../../../public/dist/trippy.jpg';
 import '../../../../node_modules/aos/dist/aos.css';
 import './projects.css';
 
@@ -16,7 +13,43 @@ class Projects extends React.Component {
       <div id="linkToProjects">
         <h2 id="projects">Recent Projects.</h2>
         <div className="row" id="firstRow">
-          <div className="project odd" id="imgRight" >
+          <div className="project odd" id="imgLeft" >
+
+            <div
+              className="projectBio"
+              id="left"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-once="true"
+            >
+              <h2>Discor</h2>
+              <span id="responsibilities">Built on scalable service oriented Node architecture and AWS cloud infrastructure</span>
+
+              <h4>Technology</h4>
+              <p>Designed cloud infrastructure with elastic load balancing and storage. Leveraged web sockets to get real time message updates. Implemented image upload and resizing with AWS S3 and Lambda.</p>
+
+              <button href="http://discor.us">View</button>
+            </div>
+            <div
+              className="prjectImage"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-once="true"
+            >
+              <a href="http://discor.us"><img src="/dist/discor.png" alt="Go With Me App" /></a>
+            </div>
+            <div className="techStack">
+              <h3>React/Redux - Node - AWS - DynamoDB/RDS - Nginx - Web Sockets</h3>
+            </div>
+
+          </div>
+        </div>
+        <div className="row" id="secondRow">
+          <div className="project even" id="imgRight" >
 
             <div
               className="projectBio"
@@ -33,7 +66,7 @@ class Projects extends React.Component {
               <h4>Technology</h4>
               <p>Redis cache with cron workers and load balancer for optimized content delivery. Designed backend architecture and ORM/ODM database schemas. Created search and itineary building modules.</p>
 
-              <button>Info</button>
+              <a href="https://github.com/GoWithMeL1FB"><button>Code</button></a>
             </div>
             <div
               className="prjectImage"
@@ -43,7 +76,7 @@ class Projects extends React.Component {
               data-aos-easing="ease-in-sine"
               data-aos-once="true"
             >
-              <img src={project1} alt="Go With Me App" />
+              <img src="/dist/gowithme.png" alt="Go With Me App" />
             </div>
             <div className="techStack">
               <h3>React/Redux - Node - Mongo/MySQL - Redis - AWS - Nginx</h3>
@@ -51,8 +84,8 @@ class Projects extends React.Component {
 
           </div>
         </div>
-        <div className="row" id="secondRow">
-          <div className="project even" id="imgLeft">
+        <div className="row" id="thirdRow">
+          <div className="project odd" id="imgLeft">
 
             <div
               className="prjectImage"
@@ -62,7 +95,7 @@ class Projects extends React.Component {
               data-aos-easing="ease-in-sine"
               data-aos-once="true"
             >
-              <img src={project2} alt="Go With Me App" />
+              <img src="/dist/coffeemeetsfido.png" alt="coffee meets fido" />
             </div>
             <div
               className="projectBio"
@@ -79,7 +112,7 @@ class Projects extends React.Component {
               <h4>Technology</h4>
               <p>Built on Node infrastructure and React framework. Integrates with Google Maps API for address lookup and location services. Uses a Firebase layer as middle-man for delpoyments and authenitication strategies.</p>
 
-              <button>Info</button>
+              <a href="https://github.com/DangerDogs/BoneBuds"><button>Code</button></a>
             </div>
             <div className="techStack">
               <h3>React - Node - SQLite - Google API - Socket.io - Firebase</h3>
@@ -88,7 +121,7 @@ class Projects extends React.Component {
           </div>
         </div>
         <div className="row" id="lastRow">
-          <div className="project odd" id="imgRight">
+          <div className="project even" id="imgRight">
 
             <div
               className="projectBio"
@@ -105,7 +138,6 @@ class Projects extends React.Component {
               <h4>Technology</h4>
               <p>Trippy Trip is a mobile first web application. Designed with metrics widgets that asynchronously fetches from MySQL. Leverages jQuery for awesome animations like front page carousel and parallax.</p>
 
-              <button>Info</button>
             </div>
             <div
               className="prjectImage"
@@ -115,7 +147,7 @@ class Projects extends React.Component {
               data-aos-easing="ease-in-sine"
               data-aos-once="true"
             >
-              <img src={project3} alt="Go With Me App" />
+              <img src="/dist/trippy.jpg" alt="trippy trip" />
             </div>
             <div className="techStack">
               <h3>jQuery - Bootstrap - MySQL - Heroku</h3>

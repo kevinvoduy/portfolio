@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "webpack -p --progress",
-    "build": "webpack -w",
-    "dev": "webpack -w"
+    "build": "webpack --mode production",
+    "dev": "webpack -w --mode development"
   },
   "author": "",
   "license": "ISC",

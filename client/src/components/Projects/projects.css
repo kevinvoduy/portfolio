@@ -9,7 +9,7 @@ h2#projects {
   margin: 0 auto;
   text-align: center;
   font-size: 3em;
-  background: var(--white);
+  background: var(--ghost);
   padding: 1.5em 0 1em 0;
 }
 
@@ -53,29 +53,33 @@ h2#projects {
 }
 
 .row .odd {
-  background: var(--white);
+  background: var(--ghost);
   padding: 3em 0 8em 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   transition: clip-path 1s ease;
 }
 
 .row .even {
-  background: var(--ghost);
+  background: var(--white);
   padding: 2em 0 8em 0;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   transition: clip-path 1s ease;
 }
 
 #firstRow {
-  background: var(--ghost);
+  background: var(--white);
 }
 
 #secondRow {
-  background: linear-gradient(var(--ghost), var(--white));
+  background: linear-gradient(var(--white), var(--ghost));
+}
+
+#fourthRow {
+  background: var(--ghost);
 }
 
 #lastRow {
-  background: var(--white);
+  background: var(--whtie);
 }
 
 /* --- end of row layout --- */
@@ -123,8 +127,8 @@ h2#projects {
   margin: 10px 0 1em 1px;
   text-transform: uppercase;
   color: var(--social);
-  font-size: .8em;
-  letter-spacing: 2px;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
 
 .projectBio h4 {
@@ -151,15 +155,17 @@ h2#projects {
 }
 
 .projectBio button {
-  display: none;
+  /* display: none; */
   color: white;
-  border: 2px solid white;
-  padding: 12px;
-  box-shadow: none;
-  width: 100px;
-  /* font-size: 1em; */
-  text-transform: uppercase;
+  background: linear-gradient(to bottom right, lightsalmon, coral);
+  box-shadow: 0px 6px 22px 0px lightsalmon;
   font-weight: 300;
+  font-size: .8em;
+  outline-color: var(--social);
+  padding: 8px;
+  margin-top: 1em;
+  text-transform: uppercase;
+  width: 100px;
 }
 
 /* --- end of project bio --- */

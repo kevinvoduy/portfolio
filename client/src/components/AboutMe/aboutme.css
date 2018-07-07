@@ -8,7 +8,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 4em 0;
-  background-color: var(--ghost);
+  background-color: var(--white);
 }
 #profilepic {
   border-radius: 50%;
