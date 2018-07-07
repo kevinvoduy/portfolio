@@ -30,7 +30,7 @@ class Projects extends React.Component {
               <h4>Technology</h4>
               <p>Designed UX with Sass. Built cloud infrastructure with elastic load balancing and storage. Leveraged web sockets to get real time message updates. Implemented image upload and resizing with AWS S3 and Lambda.</p>
 
-              <button href="http://discor.us"><span>View</span></button>
+              <a href="http://discor.us"><button><span>View</span></button></a>
             </div>
             <div
               className="prjectImage"
