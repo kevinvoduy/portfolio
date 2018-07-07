@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
-const CompressionPlugin = require('compression-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 require('dotenv').config();
 
 module.exports = {
@@ -42,16 +43,11 @@ module.exports = {
         NODE_ENV: JSON.stringify('production'),
       },
     }),
-    new CompressionPlugin({
-      asset: '[path].gz[query]',
-      algorithm: 'gzip',
-      test: /\.js$|\.css$|\.html$/,
-      threshold: 10240,
-      minRatio: 0.8,
-    }),
   ],
   optimization: {
-    minimize: true,
+    minimizer: [
+      new UglifyJsPlugin(),
+    ],
     mergeDuplicateChunks: true,
   },
   performance: {
