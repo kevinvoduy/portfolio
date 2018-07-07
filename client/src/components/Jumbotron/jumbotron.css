@@ -1,17 +1,13 @@
 /* --- start of background --- */
 
 .jumbo {
-  display: grid;
-  grid-auto-columns: 1fr;
+  display: block;
   height: 100vh;
-  width: 100%;
   object-fit: cover;
   overflow-x: hidden;
   overflow-y: auto;
   background-image: url('/dist/desk.jpg');
-  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 

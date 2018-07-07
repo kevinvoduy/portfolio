@@ -2,9 +2,8 @@ import React from 'react';
 import './jumbotron.css';
 
 const Jumbotron = () => (
-  <div className="container">
+  <div className="container" id="container">
     <div className="jumbo" />
-
     <div className="centered">
       <div className="sad">
         <p className="jumbo-text">{'Hello, I\'m '}<span className="myName">Kevin Vo</span>.</p>

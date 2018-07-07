@@ -41,7 +41,7 @@ export default class NavBar extends Component {
       <div className="nav">
         <ul>
           <li>LET GO.</li>
-          <li><a href="/">home</a></li>
+          <li><a href="#container">home</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#connect">connect</a></li>
         </ul>
