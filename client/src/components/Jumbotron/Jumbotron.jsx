@@ -4,7 +4,7 @@ import './jumbotron.css';
 
 class Jumbotron extends React.Component {
   componentDidMount() {
-    const strings = ['a full stack engineer', 'a graphic designer'];
+    const strings = ['a full stack engineer.', 'a graphic designer.'];
     const options = {
       strings,
       typeSpeed: 60,
