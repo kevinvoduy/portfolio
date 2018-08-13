@@ -20,7 +20,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 8px;
-  max-width: 85%;
+  width: 100%;
 }
 
 /* --- start of button --- */
@@ -103,7 +103,7 @@ button:hover span:after {
 
 @media (max-width: 750px) {
   .centered {
-    width: 100%;
+    width: 95%;
   }
 
   .centered a {
