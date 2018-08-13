@@ -25,10 +25,10 @@ class Projects extends React.Component {
               data-aos-once="true"
             >
               <h2>Discor</h2>
-              <span id="responsibilities">Built on scalable service oriented Node architecture and AWS cloud infrastructure</span>
+              <span id="responsibilities">Built on AWS cloud infrastructure and scalable service oriented Node architecture</span>
 
               <h4>Technology</h4>
-              <p>Designed UX with Sass. Built cloud infrastructure with elastic load balancing and storage. Leveraged web sockets to get real time message updates. Implemented image upload and resizing with AWS S3 and Lambda.</p>
+              <p>UX designed with Sass. Built on cloud infrastructure with elastic load balancing and storage. Leverages web sockets for real time message updates. Get image upload and resizing with AWS S3 and Lambda.</p>
 
               <a href="http://discor.us"><button><span>View</span></button></a>
             </div>
@@ -40,7 +40,7 @@ class Projects extends React.Component {
               data-aos-easing="ease-in-sine"
               data-aos-once="true"
             >
-              <a href="http://discor.us"><img src="/dist/discor.png" alt="Go With Me App" /></a>
+              <a href="http://discor.us"><img src="/dist/discor.png" alt="Discor App" /></a>
             </div>
             <div className="techStack">
               <h3>React/Redux - Node - AWS - DynamoDB/RDS - Nginx - Web Sockets</h3>
@@ -64,7 +64,7 @@ class Projects extends React.Component {
               <span id="responsibilities">Built on scalable service oriented Node infrastructure and continuous delivery pipeline</span>
 
               <h4>Technology</h4>
-              <p>Redis cache with cron workers and load balancer for optimized content delivery. Designed backend architecture and ORM/ODM database schemas. Created search and itineary building modules.</p>
+              <p>Get optimized content delivery with Redis cache and cron workers. Modular backend architecture with ORM/ODM databases. Fully built search and itinerary modules.</p>
 
               <a href="https://github.com/GoWithMeL1FB"><button><span>Code</span></button></a>
             </div>

@@ -4,13 +4,13 @@ import './jumbotron.css';
 
 class Jumbotron extends React.Component {
   componentDidMount() {
-    const strings = ['a full stack engineer.', 'also unemployed.'];
+    const strings = ['a full stack engineer.', 'a graphic designer.'];
     const options = {
       strings,
-      typeSpeed: 80,
+      typeSpeed: 60,
       backSpeed: 50,
       loop: true,
-      backDelay: 2500,
+      backDelay: 2000,
     };
 
     this.typed = new Typed(this.el, options);
@@ -28,7 +28,7 @@ class Jumbotron extends React.Component {
             </div>
           </div>
 
-          <a href="#projects"><button className="button"><span>View my work</span></button></a>
+          <a href="#projects"><img src="dist/right-arrow.svg" alt="" /></a>
         </div>
       </div>
     );

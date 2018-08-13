@@ -6,7 +6,7 @@
   object-fit: cover;
   overflow-x: hidden;
   overflow-y: auto;
-  background-image: url('/dist/desk.jpg');
+  background-image: url('/dist/workstation.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -16,7 +16,7 @@
 .centered {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 8px;
@@ -26,29 +26,36 @@
 /* --- start of button --- */
 
 .centered a {
-  display: inline-block;
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 4em auto 0 auto;
+  transition: scale 5s ease-in-out;
+}
+
+.centered a:hover {
+  transform: scale(1.1);
 }
 
 button {
   display: block;
   background: var(--social);
   border: none;
-  border-bottom: 3px solid coral;
   border-radius: 32px;
-  box-shadow: 0px 8px 28px coral;
+  box-shadow: 0px 8px 28px var(--social);
   font-size: 1em;
   min-width: 80px;
   margin-top: .5em;
-  outline-color: coral;
-  padding: 1em 2em;
-  transition: all 0.3s;
+  outline-color: var(--social);
+  padding: .75em 3em;
+  transition: all .2s;
 }
 
 button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.2s;
   color: whitesmoke;
   text-transform: uppercase;
 }
@@ -57,13 +64,14 @@ button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+  top: -1;
+  right: -16px;
+  transition: 0.2s;
 }
 
 button:hover span {
-  padding-right: 22px;
+  padding-right: 16px;
+  padding-left: 8px;
 }
 
 button:hover {
@@ -106,9 +114,9 @@ button:hover span:after {
   .button {
     background: var(--social);
     border: none;
-    border-bottom: 3px solid coral;
+    border-bottom: 3px solid var(--social);
     border-radius: 32px;
-    box-shadow: 0px 8px 28px coral;
+    box-shadow: 0px 8px 28px var(--social);
     margin-top: 2em;
   }
 

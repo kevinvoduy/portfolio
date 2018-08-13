@@ -10,7 +10,7 @@ h2#projects {
   text-align: center;
   font-size: 3em;
   background: var(--ghost);
-  padding: 1.5em 0 1em 0;
+  padding: 2em 0 1em 0;
 }
 
 /* --- horizontal scroll ---
@@ -121,11 +121,12 @@ h2#projects {
 
 .projectBio h2 {
   margin-bottom: 2px;
+  font-size: 2em;
 }
 
 #responsibilities {
   margin: 10px 0 1em 1px;
-  text-transform: uppercase;
+  /* text-transform: capitalize; */
   color: var(--social);
   font-size: 1em;
   letter-spacing: 1px;
@@ -157,8 +158,8 @@ h2#projects {
 .projectBio button {
   display: block;
   color: white;
-  background: linear-gradient(to bottom right, lightsalmon, coral);
-  box-shadow: 0px 6px 22px 0px lightsalmon;
+  background: var(--social);
+  box-shadow: 0px 6px 22px 0px var(--socialOffest);
   font-weight: 300;
   font-size: .8em;
   outline-color: var(--social);
