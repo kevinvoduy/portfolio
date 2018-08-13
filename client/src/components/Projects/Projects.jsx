@@ -6,9 +6,7 @@ import './projects.css';
 class Projects extends React.Component {
   constructor() {
     super();
-    AOS.init({
-      disable: 'phone',
-    });
+    AOS.init();
   }
   render() {
     return (
