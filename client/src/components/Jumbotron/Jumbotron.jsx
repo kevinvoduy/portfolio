@@ -4,7 +4,7 @@ import './jumbotron.css';
 
 class Jumbotron extends React.Component {
   componentDidMount() {
-    const strings = ['a full stack engineer.', 'a graphic designer.'];
+    const strings = ['I\'m a full stack engineer', 'I\'m a graphic designer'];
     const options = {
       strings,
       typeSpeed: 60,
@@ -22,7 +22,7 @@ class Jumbotron extends React.Component {
         <div className="jumbo" />
         <div className="centered">
           <div className="sad">
-            <p className="jumbo-text">{'Hello, I\'m '}<span className="myName">Kevin Vo</span>{'. I am'}</p>
+            <p className="jumbo-text">{'Hello, I\'m '}<span className="myName">Kevin Vo</span></p>
             <div className="typewriter jumbo-text">
               <span id="typed-js" ref={(el) => { this.el = el; }} />
             </div>
